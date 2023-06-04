@@ -1,6 +1,6 @@
 # EXPERIMENT-NO--04-Distance measurement using Ultrasonic sensor
 
-## AIM: 
+### AIM: 
 To interface an ultrasonic pair and measure the distance in centimeters , calculate the error
  
 ### COMPONENTS REQUIRED:
@@ -12,6 +12,7 @@ To interface an ultrasonic pair and measure the distance in centimeters , calcul
 
 
 ### THEORY: 
+
 The HC-SR04 ultrasonic sensor uses SONAR to determine the distance of an object just like the bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package from 2 cm to 400 cm or 1” to 13 feet.
 
 The operation is not affected by sunlight or black material, although acoustically, soft materials like cloth can be difficult to detect. It comes complete with ultrasonic transmitter and receiver module.
@@ -54,8 +55,13 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 10.	Plot the graph for the output voltage vs the resistance 
 
 
-### PROGRAM 
-
+### PROGRAM: 
+```
+   Devloped by Samuel M 
+   Reg no : 212222040142
+   Department: B.E/ Computer Science Engineering.
+   
+   
 #define echoPin 9
 #define trigPin 10
 long duration;
@@ -78,28 +84,24 @@ void loop(){
   Serial.print(distance);
   Serial.println(" cm");
 }
+```
 
 
 
-
-### Distance vs measurement table 
-![ex4 1](https://github.com/Samuelmariappan/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/119393030/e02deb88-7c97-48cc-85f3-79adfa74e222)
-
+		
+			
 
  
-			
-			
-			
-
-![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
-
-			
-			
-			
-			
-			
-			Average error = sum/ number of readings 
+ ### Simulation Output:
  
+ #### Before Simulation:
+ 
+ ![ex4 1](https://github.com/Samuelmariappan/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/119393030/78a2d7df-aaab-4f37-8906-515ba270dcae)
+
+ 
+ #### After Simulation:
+ 
+ ![ex4 2](https://github.com/Samuelmariappan/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/119393030/559a3054-84ca-4f74-97d5-a270c5c0bff5)
 
 
 
@@ -107,9 +109,8 @@ void loop(){
 
 
 
+### RESULT:
 
-### RESULTS
-
-
+Thus the distance value is measured in "CM" using ulrasonic sensor
 
  
